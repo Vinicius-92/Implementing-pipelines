@@ -31,7 +31,7 @@ public class Program {
 			
 			while(line != null) {
 				String[] fields = line.split(",");
-				emp.add(new Employee(fields[0], fields[1], Double.parseDouble(fields[2])));
+				emp.add(new Employee(fields[0].toUpperCase(), fields[1], Double.parseDouble(fields[2])));
 				line = br.readLine();
 			}
 			
